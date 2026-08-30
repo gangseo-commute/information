@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>삼성중공업–명지/하단/에코델타시티 출퇴근 버스 안내</title>
+<title>안내 | 삼성중공업–명지/하단/에코델타시티 출퇴근 버스</title>
 <meta name="description" content="삼성중공업–명지/하단/에코델타시티 출퇴근 버스 회원제 안내 페이지. 노선, 운행 시간, 비용, 가입 방법을 확인하세요.">
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +42,20 @@
     padding:48px 0 40px;margin-bottom:36px;
   }
   header .wrap{padding-bottom:0}
+  .home{
+    display:inline-flex;align-items:center;gap:7px;
+    margin-bottom:24px;
+    font-size:13.5px;font-weight:800;letter-spacing:-.01em;
+    color:var(--ink);text-decoration:none;
+    background:#fff;
+    border-radius:3px;
+    padding:9px 15px;
+    box-shadow:0 2px 8px rgba(0,0,0,.35);
+    transition:opacity .15s,transform .1s;
+  }
+  .home:hover{opacity:.88}
+  .home:active{transform:scale(.98)}
+  .home:focus-visible{outline:2.5px solid var(--signal);outline-offset:3px}
   .badge{
     display:flex;align-items:center;gap:10px;
     font-family:var(--mono);font-size:11px;font-weight:500;
@@ -126,7 +140,6 @@
   td.cat{font-weight:800;color:var(--ink);white-space:nowrap}
   td .sat{color:var(--sat);font-weight:600}
   td .hol{color:var(--warn);font-weight:600}
-  tr:last-child td{border-bottom:none}
   .note{font-size:12.5px;color:var(--muted);margin-top:10px;letter-spacing:-.01em;line-height:1.6}
 
   /* ── 비용 ── */
@@ -185,8 +198,9 @@
 
 <header>
   <div class="wrap">
+    <a class="home" href="./">&larr;&ensp;홈으로</a>
     <span class="badge">회원제 출퇴근 버스</span>
-    <h1>삼성중공업–명지/하단/에코델타시티<br>출퇴근 버스 안내 페이지</h1>
+    <h1>삼성중공업–명지/하단/에코델타시티<br>출퇴근 버스 안내</h1>
     <p>'경남고속뉴부산관광(주)'와 함께 출퇴근을 함께 하고 있어요.</p>
   </div>
 </header>
@@ -261,11 +275,11 @@
 
   <!-- 탑승 방법 -->
   <section>
-    <h2>탑승 방법</h2>
+    <h2>가입 절차</h2>
     <div class="card">
       <ol class="steps">
         <li><strong>가입 신청서 작성</strong>
-          <small>아래 버튼을 눌러 신청서를 제출해주세요.</small></li>
+          <small>아래 신규 가입 신청 메뉴에 위치한 '가입 신청서 작성하기'를 눌러 신청서를 제출해주세요.</small></li>
         <li><strong>가입비·월 회비 납입</strong>
           <small>안내에 따라 납입을 완료해주세요.</small></li>
         <li><strong>밴드 가입</strong>
@@ -280,7 +294,7 @@
   <section>
     <h2>신규 가입 신청</h2>
     <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLScoN5vBJQd3fdL2jp5mhgHFYrvDwvCfjWdRyFQp6ft3suzFzQ/viewform" target="_blank" rel="noopener">가입 신청서 작성하기</a>
-    <p class="cta-sub">Google 설문지로 이동합니다.</p>
+    <p class="cta-sub">Google form으로 이동합니다.</p>
   </section>
 
 
